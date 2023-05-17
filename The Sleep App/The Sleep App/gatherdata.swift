@@ -4,7 +4,7 @@
 //
 //  Created by Iyad Hassan on 5/17/23.
 //
-
+import HealthKit
 import Foundation
 func collectHeartRateData() {
     guard let heartRateType = HKObjectType.quantityType(forIdentifier: .heartRate) else {
