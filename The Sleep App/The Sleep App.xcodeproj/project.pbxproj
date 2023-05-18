@@ -16,6 +16,7 @@
 		4FDD32E82A15614B00A1DD18 /* The_Sleep_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDD32E72A15614B00A1DD18 /* The_Sleep_AppUITestsLaunchTests.swift */; };
 		4FDD32F52A1562D700A1DD18 /* healthkit authorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDD32F42A1562D700A1DD18 /* healthkit authorization.swift */; };
 		4FDD32F72A15631A00A1DD18 /* gatherdata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDD32F62A15631A00A1DD18 /* gatherdata.swift */; };
+		4FDD32F92A15FDA400A1DD18 /* brdgatherdata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDD32F82A15FDA400A1DD18 /* brdgatherdata.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		4FDD32E72A15614B00A1DD18 /* The_Sleep_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_Sleep_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4FDD32F42A1562D700A1DD18 /* healthkit authorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "healthkit authorization.swift"; sourceTree = "<group>"; };
 		4FDD32F62A15631A00A1DD18 /* gatherdata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gatherdata.swift; sourceTree = "<group>"; };
+		4FDD32F82A15FDA400A1DD18 /* brdgatherdata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = brdgatherdata.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				4FDD32D02A15614B00A1DD18 /* Preview Content */,
 				4FDD32F42A1562D700A1DD18 /* healthkit authorization.swift */,
 				4FDD32F62A15631A00A1DD18 /* gatherdata.swift */,
+				4FDD32F82A15FDA400A1DD18 /* brdgatherdata.swift */,
 			);
 			path = "The Sleep App";
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				4FDD32F72A15631A00A1DD18 /* gatherdata.swift in Sources */,
 				4FDD32F52A1562D700A1DD18 /* healthkit authorization.swift in Sources */,
 				4FDD32CC2A15614A00A1DD18 /* ContentView.swift in Sources */,
+				4FDD32F92A15FDA400A1DD18 /* brdgatherdata.swift in Sources */,
 				4FDD32CA2A15614A00A1DD18 /* The_Sleep_AppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
