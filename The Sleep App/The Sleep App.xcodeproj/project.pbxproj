@@ -17,6 +17,7 @@
 		4FDD32F72A15631A00A1DD18 /* gatherdata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDD32F62A15631A00A1DD18 /* gatherdata.swift */; };
 		4FDD32F92A15FDA400A1DD18 /* brdgatherdata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDD32F82A15FDA400A1DD18 /* brdgatherdata.swift */; };
 		F140D5DE2A17F7E700F59B79 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F140D5DD2A17F7E600F59B79 /* SwiftUIView.swift */; };
+		F140D5E02A1807B200F59B79 /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F140D5DF2A1807B200F59B79 /* InitialView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		4FDD32F62A15631A00A1DD18 /* gatherdata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gatherdata.swift; sourceTree = "<group>"; };
 		4FDD32F82A15FDA400A1DD18 /* brdgatherdata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = brdgatherdata.swift; sourceTree = "<group>"; };
 		F140D5DD2A17F7E600F59B79 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		F140D5DF2A1807B200F59B79 /* InitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +103,12 @@
 		4FDD32C82A15614A00A1DD18 /* The Sleep App */ = {
 			isa = PBXGroup;
 			children = (
-				4FDD32C92A15614A00A1DD18 /* The_Sleep_AppApp.swift */,
-				4FDD32CD2A15614B00A1DD18 /* Assets.xcassets */,
-				4FDD32CF2A15614B00A1DD18 /* The_Sleep_App.entitlements */,
-				4FDD32F42A1562D700A1DD18 /* healthkit authorization.swift */,
 				F140D5DD2A17F7E600F59B79 /* SwiftUIView.swift */,
+				4FDD32CF2A15614B00A1DD18 /* The_Sleep_App.entitlements */,
+				4FDD32C92A15614A00A1DD18 /* The_Sleep_AppApp.swift */,
+				F140D5DF2A1807B200F59B79 /* InitialView.swift */,
+				4FDD32CD2A15614B00A1DD18 /* Assets.xcassets */,
+				4FDD32F42A1562D700A1DD18 /* healthkit authorization.swift */,
 				4FDD32F62A15631A00A1DD18 /* gatherdata.swift */,
 				4FDD32F82A15FDA400A1DD18 /* brdgatherdata.swift */,
 				4FDD32D02A15614B00A1DD18 /* Preview Content */,
@@ -271,6 +274,7 @@
 				4FDD32F72A15631A00A1DD18 /* gatherdata.swift in Sources */,
 				4FDD32F52A1562D700A1DD18 /* healthkit authorization.swift in Sources */,
 				F140D5DE2A17F7E700F59B79 /* SwiftUIView.swift in Sources */,
+				F140D5E02A1807B200F59B79 /* InitialView.swift in Sources */,
 				4FDD32F92A15FDA400A1DD18 /* brdgatherdata.swift in Sources */,
 				4FDD32CA2A15614A00A1DD18 /* The_Sleep_AppApp.swift in Sources */,
 			);
