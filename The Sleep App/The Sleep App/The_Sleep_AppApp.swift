@@ -11,7 +11,7 @@ import SwiftUI
 struct The_Sleep_AppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SwiftUIView()
         }
     }
 }

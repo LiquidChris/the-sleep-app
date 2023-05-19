@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4FDD32CA2A15614A00A1DD18 /* The_Sleep_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDD32C92A15614A00A1DD18 /* The_Sleep_AppApp.swift */; };
-		4FDD32CC2A15614A00A1DD18 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDD32CB2A15614A00A1DD18 /* ContentView.swift */; };
 		4FDD32CE2A15614B00A1DD18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FDD32CD2A15614B00A1DD18 /* Assets.xcassets */; };
 		4FDD32D22A15614B00A1DD18 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FDD32D12A15614B00A1DD18 /* Preview Assets.xcassets */; };
 		4FDD32DC2A15614B00A1DD18 /* The_Sleep_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDD32DB2A15614B00A1DD18 /* The_Sleep_AppTests.swift */; };
@@ -17,6 +16,7 @@
 		4FDD32F52A1562D700A1DD18 /* healthkit authorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDD32F42A1562D700A1DD18 /* healthkit authorization.swift */; };
 		4FDD32F72A15631A00A1DD18 /* gatherdata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDD32F62A15631A00A1DD18 /* gatherdata.swift */; };
 		4FDD32F92A15FDA400A1DD18 /* brdgatherdata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDD32F82A15FDA400A1DD18 /* brdgatherdata.swift */; };
+		F140D5DE2A17F7E700F59B79 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F140D5DD2A17F7E600F59B79 /* SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,6 @@
 /* Begin PBXFileReference section */
 		4FDD32C62A15614A00A1DD18 /* The Sleep App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Sleep App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FDD32C92A15614A00A1DD18 /* The_Sleep_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_Sleep_AppApp.swift; sourceTree = "<group>"; };
-		4FDD32CB2A15614A00A1DD18 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4FDD32CD2A15614B00A1DD18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4FDD32CF2A15614B00A1DD18 /* The_Sleep_App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = The_Sleep_App.entitlements; sourceTree = "<group>"; };
 		4FDD32D12A15614B00A1DD18 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -51,6 +50,7 @@
 		4FDD32F42A1562D700A1DD18 /* healthkit authorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "healthkit authorization.swift"; sourceTree = "<group>"; };
 		4FDD32F62A15631A00A1DD18 /* gatherdata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gatherdata.swift; sourceTree = "<group>"; };
 		4FDD32F82A15FDA400A1DD18 /* brdgatherdata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = brdgatherdata.swift; sourceTree = "<group>"; };
+		F140D5DD2A17F7E600F59B79 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,13 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				4FDD32C92A15614A00A1DD18 /* The_Sleep_AppApp.swift */,
-				4FDD32CB2A15614A00A1DD18 /* ContentView.swift */,
 				4FDD32CD2A15614B00A1DD18 /* Assets.xcassets */,
 				4FDD32CF2A15614B00A1DD18 /* The_Sleep_App.entitlements */,
-				4FDD32D02A15614B00A1DD18 /* Preview Content */,
 				4FDD32F42A1562D700A1DD18 /* healthkit authorization.swift */,
+				F140D5DD2A17F7E600F59B79 /* SwiftUIView.swift */,
 				4FDD32F62A15631A00A1DD18 /* gatherdata.swift */,
 				4FDD32F82A15FDA400A1DD18 /* brdgatherdata.swift */,
+				4FDD32D02A15614B00A1DD18 /* Preview Content */,
 			);
 			path = "The Sleep App";
 			sourceTree = "<group>";
@@ -270,7 +270,7 @@
 			files = (
 				4FDD32F72A15631A00A1DD18 /* gatherdata.swift in Sources */,
 				4FDD32F52A1562D700A1DD18 /* healthkit authorization.swift in Sources */,
-				4FDD32CC2A15614A00A1DD18 /* ContentView.swift in Sources */,
+				F140D5DE2A17F7E700F59B79 /* SwiftUIView.swift in Sources */,
 				4FDD32F92A15FDA400A1DD18 /* brdgatherdata.swift in Sources */,
 				4FDD32CA2A15614A00A1DD18 /* The_Sleep_AppApp.swift in Sources */,
 			);
