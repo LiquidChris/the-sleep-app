@@ -161,7 +161,7 @@ struct AppSidebarNavigation: View {
     }
 }
 
-@main
+//@main
 struct QuestionnaireApp: App {
     var body: some Scene {
         WindowGroup {
