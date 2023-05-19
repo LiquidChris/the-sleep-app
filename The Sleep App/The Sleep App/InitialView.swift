@@ -84,7 +84,11 @@ struct AnswerView: View {
     var body: some View {
         VStack {
             Text(question.text)
-            TextField("Answer", text: $answer ?? "")
+            TextField("Answer", text: Binding(
+                get: { answer ?? "" }.
+                set: { answer = $0 }
+            ))
+            $answer ?? "")
         }
         .padding()
     }
