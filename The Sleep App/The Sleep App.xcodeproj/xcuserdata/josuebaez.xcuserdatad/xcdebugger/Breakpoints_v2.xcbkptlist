@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "639B0506-FAF1-4B26-8EE2-8649E0379B2F"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "66FD9B30-9BED-4509-B1DD-4CF6D05685E2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "The Sleep App/InitialView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "66FD9B30-9BED-4509-B1DD-4CF6D05685E2 - a27f51f106bd8671"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.NavigationLink&lt;SwiftUI.Label&lt;SwiftUI.Text, SwiftUI.Image&gt;, SwiftUI.Text&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Label&lt;SwiftUI.Text, SwiftUI.Image&gt;, SwiftUI.Text&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Label&lt;SwiftUI.Text, SwiftUI.Image&gt;, SwiftUI.Text&gt;)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.listStyle&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ListStyle&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.frame(minWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, minHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0)&gt; in The_Sleep_App.ContentView.body.getter : some"
+                  moduleName = "The Sleep App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josuebaez/Desktop/the-sleep-app/The%20Sleep%20App/The%20Sleep%20App/InitialView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "1208">
+               </Location>
+               <Location
+                  uuid = "66FD9B30-9BED-4509-B1DD-4CF6D05685E2 - a69ed47c9d3e2343"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; SwiftUI.Label&lt;SwiftUI.Text, SwiftUI.Image&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.NavigationLink&lt;SwiftUI.Label&lt;SwiftUI.Text, SwiftUI.Image&gt;, SwiftUI.Text&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Label&lt;SwiftUI.Text, SwiftUI.Image&gt;, SwiftUI.Text&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Label&lt;SwiftUI.Text, SwiftUI.Image&gt;, SwiftUI.Text&gt;)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.listStyle&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ListStyle&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.frame(minWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, minHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0)&gt; in The_Sleep_App.ContentView.body.getter : some"
+                  moduleName = "The Sleep App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josuebaez/Desktop/the-sleep-app/The%20Sleep%20App/The%20Sleep%20App/InitialView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "106">
+               </Location>
+               <Location
+                  uuid = "66FD9B30-9BED-4509-B1DD-4CF6D05685E2 - 5d96a2acaf0540"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.NavigationLink&lt;SwiftUI.Label&lt;SwiftUI.Text, SwiftUI.Image&gt;, SwiftUI.Text&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Label&lt;SwiftUI.Text, SwiftUI.Image&gt;, SwiftUI.Text&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Label&lt;SwiftUI.Text, SwiftUI.Image&gt;, SwiftUI.Text&gt;)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.listStyle&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ListStyle&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.frame(minWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, minHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0)&gt; in The_Sleep_App.InitialView.body.getter : some"
+                  moduleName = "The Sleep App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josuebaez/Desktop/the-sleep-app/The%20Sleep%20App/The%20Sleep%20App/InitialView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "1208">
+               </Location>
+               <Location
+                  uuid = "66FD9B30-9BED-4509-B1DD-4CF6D05685E2 - 9a39e069aaafa26c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; SwiftUI.Label&lt;SwiftUI.Text, SwiftUI.Image&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.NavigationLink&lt;SwiftUI.Label&lt;SwiftUI.Text, SwiftUI.Image&gt;, SwiftUI.Text&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Label&lt;SwiftUI.Text, SwiftUI.Image&gt;, SwiftUI.Text&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Label&lt;SwiftUI.Text, SwiftUI.Image&gt;, SwiftUI.Text&gt;)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.listStyle&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ListStyle&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.frame(minWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, minHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0)&gt; in The_Sleep_App.InitialView.body.getter : some"
+                  moduleName = "The Sleep App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josuebaez/Desktop/the-sleep-app/The%20Sleep%20App/The%20Sleep%20App/InitialView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "106">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

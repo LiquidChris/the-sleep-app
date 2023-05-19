@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-//@main
-//struct The_Sleep_AppApp: App {
-//    var body: some Scene {
-//        WindowGroup {
-//            SwiftUIView()
-//        }
-//    }
-//}
+@main
+struct The_Sleep_AppApp: App {
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+    }
+}
 
 
