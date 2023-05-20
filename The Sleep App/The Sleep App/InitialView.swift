@@ -1,128 +1,258 @@
 import SwiftUI
 
-struct ContentView: View {
-    @State private var selectedMenuItem: String? = "Home"
-    
-    var body: some View {
-        NavigationView {
-            List {
-                NavigationLink(destination: Text("Sleep"), tag: "Sleep", selection: $selectedMenuItem) {
-                    Label("Sleep", systemImage: "powersleep")
-                }
-                NavigationLink(destination: Text("Exercise"), tag: "Exercise", selection: $selectedMenuItem) {
-                    Label("Exercise", systemImage: "figure.run")
-                }
-                NavigationLink(destination: Text("Diet"), tag: "Diet", selection: $selectedMenuItem) {
-                    Label("Diet", systemImage: "fork.knife")
-                }
-            }
-            .listStyle(SidebarListStyle())
-            
-            Text(selectedMenuItem ?? "Select an item")
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-        }
-    }
+struct Question: Identifiable {
+    let id = UUID()
+    let text: String
 }
 
-<<<<<<< HEAD
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-=======
-struct AnswerView: View {
-    let question: Question
-    @Binding var answer: String?
+struct HomeView: View {
+    @Binding var isQuestionnaireStarted: Bool
     
     var body: some View {
         VStack {
-            Text(question.text)
-            TextField("Answer", text: Binding(
-                get: { answer ?? "" }.
-                set: { answer = $0 }
-            ))
-            $answer ?? "")
+            Text("Welcome to the Wellness Advisor App")
+                .font(.title)
+                .padding()
+            
+            Button(action: {
+                isQuestionnaireStarted = true
+            }) {
+                Text("Start")
+                    .font(.headline)
+                    .padding()
+                    .background(Color.blue)
+                    .foregroundColor(Color.white)
+                    .cornerRadius(10)
+                    .overlay(
+                        RoundedRectangle(cornerRadius:10)
+                            .stroke(Color.blue, lineWidth: 2)
+                    )
+            }
         }
         .padding()
     }
 }
 
-struct Screen1View: View {
-    var body: some View {
-        Text("Screen 1")
-            .font(.title)
-            .padding()
+struct ContentView: View {
+    @State private var questions: [Question] = [
+        Question(text: "How many hours of sleep do you get on average?"),
+        Question(text: "What time do you usually go to sleep?"),
+        Question(text: "What time do you usually wake up?")
+    ]
+    
+    @State private var currentQuestionIndex = 0
+    @State private var answers: [UUID: String] = [:]
+    @State private var isQuestionnaireComplete = false
+    @State private var isQuestionnaireStarted = false
+    @State private var timeToNotSubmit = true
+    
+    var currentQuestion: Question? {
+        if currentQuestionIndex < questions.count {
+            return questions[currentQuestionIndex]
+        }
+        return nil
     }
+    
+    
+    
+    var body: some View {
+        let question = questions[currentQuestionIndex]
+            if isQuestionnaireComplete {
+                SidebarNavigation()
+            } else if isQuestionnaireStarted {
+                if currentQuestionIndex < questions.count && timeToNotSubmit{
+                    QuestionPromptView(question: question, answer: $answers[question.id], onNextQuestion: moveNextQuestion)
+                } else {
+                    SubmitView(isComplete: $isQuestionnaireComplete)
+                }
+            } else {
+                HomeView(isQuestionnaireStarted: $isQuestionnaireStarted)
+            }
+        }
+
+    func moveNextQuestion() {
+        guard let question = currentQuestion, let answer = answers[question.id], !answer.isEmpty else {
+            return
+        }
+        
+        if currentQuestionIndex < questions.count - 1 {
+            currentQuestionIndex += 1
+        } else {
+            timeToNotSubmit = false
+        }
+    }
+        
+    
 }
 
-struct Screen2View: View {
-    var body: some View {
-        Text("Screen 2")
-            .font(.title)
+struct SubmitView: View{
+    @Binding var isComplete: Bool
+        
+        var body: some View {
+            VStack {
+                Text("Thank you for your answers!")
+                    .font(.title)
+                    .padding()
+                
+                Button(action: {
+                    isComplete = true
+                }) {
+                    Text("Continue")
+                        .font(.headline)
+                        .padding()
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                }
+            }
             .padding()
-    }
+        }
 }
 
-struct Screen3View: View {
-    var body: some View {
-        Text("Screen 3")
-            .font(.title)
-            .padding()
+struct QuestionPromptView: View{
+    let question: Question
+    @Binding var answer: String?
+    let onNextQuestion: () -> Void
+        
+        var body: some View {
+            VStack {
+                Text(question.text)
+                    .font(.title)
+                    .padding()
+                    
+                TextField("Answer", text: Binding(
+                    get: { answer ?? "" },
+                    set: { answer = $0 }
+                ))
+                .padding()
+                    
+                Button(action: onNextQuestion) {
+                    Text("Continue")
+                        .font(.headline)
+                        .padding()
+                        .background(Color.mint)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                }
+            }
+        }
     }
+
+struct AnswerView: View{
+    let question: Question
+        @Binding var answer: String?
+        
+        var body: some View {
+            VStack {
+                Text(question.text)
+                TextField("Answer", text: Binding(
+                    get: { answer ?? "" },
+                    set: { answer = $0 }
+                ))
+            }
+            .padding()
+        }
 }
 
-struct AppSidebarNavigation: View {
+struct SidebarNavigation: View {
     enum NavigationItem {
-        case screen1, screen2, screen3
+        case SleepScreen, ExerciseScreen, DietScreen
     }
     
-    @State private var selectedItem: NavigationItem?
-    
+    @State private var selectedMenuItem: String? = "Pick A Screen!"
     var body: some View {
         NavigationView {
-            if selectedItem == nil {
+            if selectedMenuItem == nil {
                 VStack {
-                    NavigationLink(destination: Screen1View(), tag: .screen1, selection: $selectedItem) {
+                    NavigationLink(destination: SleepScreen(), tag: "sleep", selection: $selectedMenuItem) {
                         Button("Screen 1") {
-                            selectedItem = .screen1
+                            selectedMenuItem = "sleep"
                         }
                     }
-                    NavigationLink(destination: Screen2View(), tag: .screen2, selection: $selectedItem) {
+                    NavigationLink(destination: ExerciseScreen(), tag: "exercise", selection: $selectedMenuItem) {
                         Button("Screen 2") {
-                            selectedItem = .screen2
+                            selectedMenuItem = "exercise"
                         }
                     }
-                    NavigationLink(destination: Screen3View(), tag: .screen3, selection: $selectedItem) {
+                    NavigationLink(destination: DietScreen(), tag: "diet", selection: $selectedMenuItem) {
                         Button("Screen 3") {
-                            selectedItem = .screen3
+                            selectedMenuItem = "diet"
                         }
                     }
                 }
                 .padding()
             } else {
-                List(selection: $selectedItem) {
-                    NavigationLink(destination: Screen1View(), tag: .screen1, selection: $selectedItem) {
-                        Label("Screen 1", systemImage: "1.circle")
+                List {
+                    NavigationLink(destination: SleepScreen(), tag: "Sleep", selection: $selectedMenuItem) {
+                        Label("Sleep", systemImage: "powersleep")
                     }
-                    NavigationLink(destination: Screen2View(), tag: .screen2, selection: $selectedItem) {
-                        Label("Screen 2", systemImage: "2.circle")
+                    NavigationLink(destination: ExerciseScreen(), tag: "Exercise", selection: $selectedMenuItem) {
+                        Label("Exercise", systemImage: "figure.run")
                     }
-                    NavigationLink(destination: Screen3View(), tag: .screen3, selection: $selectedItem) {
-                        Label("Screen 3", systemImage: "3.circle")
+                    NavigationLink(destination: DietScreen(), tag: "Diet", selection: $selectedMenuItem) {
+                        Label("Diet", systemImage: "fork.knife")
                     }
                 }
                 .listStyle(SidebarListStyle())
                 .navigationTitle("App Sidebar")
+                /*
+                Text(selectedMenuItem ?? "Select an item")
+                    .frame(maxWidth: .infinity, maxHeight: .infinity) */
             }
         }
+            
     }
 }
 
-//@main
-struct QuestionnaireApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
+struct SleepScreen: View {
+    var body: some View{
+        ZStack{
+            LinearGradient(
+                gradient: Gradient(colors: [Color.black.opacity(0.7), Color.blue.opacity(0.7)]),
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                    )
+                    .edgesIgnoringSafeArea(.all)
+            VStack{
+                Text("Recommendation 1")
+                    .padding()
+                
+                Text("Recommendation 2")
+                    .padding()
+            }
         }
->>>>>>> ebd75167d52d5c413ebba779765f06b23676b028
+        
+                
+    }
+}
+
+struct ExerciseScreen: View {
+    var body: some View{
+        LinearGradient(
+            gradient: Gradient(colors: [Color.red.opacity(0.8), Color.orange.opacity(0.7)]),
+                    startPoint: .topLeading,
+                    endPoint: .bottomTrailing
+                )
+                .edgesIgnoringSafeArea(.all)
+                
+    }
+}
+
+struct DietScreen: View {
+    var body: some View{
+        LinearGradient(
+            gradient: Gradient(colors: [Color.yellow.opacity(0.7), Color.green.opacity(0.8)]),
+                    startPoint: .topLeading,
+                    endPoint: .bottomTrailing
+                )
+                .edgesIgnoringSafeArea(.all)
+                
+    }
+}
+    
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
     }
 }
