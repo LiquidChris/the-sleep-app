@@ -16,8 +16,13 @@
 		4FDD32F52A1562D700A1DD18 /* healthkit authorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDD32F42A1562D700A1DD18 /* healthkit authorization.swift */; };
 		4FDD32F72A15631A00A1DD18 /* gatherdata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDD32F62A15631A00A1DD18 /* gatherdata.swift */; };
 		4FDD32F92A15FDA400A1DD18 /* brdgatherdata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDD32F82A15FDA400A1DD18 /* brdgatherdata.swift */; };
+<<<<<<< HEAD
 		F140D5DE2A17F7E700F59B79 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F140D5DD2A17F7E600F59B79 /* WelcomeView.swift */; };
 		F140D5E02A1807B200F59B79 /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F140D5DF2A1807B200F59B79 /* InitialView.swift */; };
+=======
+		F140D5DE2A17F7E700F59B79 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F140D5DD2A17F7E600F59B79 /* SwiftUIView.swift */; };
+		F140D5E72A184AAB00F59B79 /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = F140D5E62A184AAB00F59B79 /* PythonKit */; };
+>>>>>>> c427bca (no update)
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +56,13 @@
 		4FDD32F42A1562D700A1DD18 /* healthkit authorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "healthkit authorization.swift"; sourceTree = "<group>"; };
 		4FDD32F62A15631A00A1DD18 /* gatherdata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gatherdata.swift; sourceTree = "<group>"; };
 		4FDD32F82A15FDA400A1DD18 /* brdgatherdata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = brdgatherdata.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		F140D5DD2A17F7E600F59B79 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		F140D5DF2A1807B200F59B79 /* InitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
+=======
+		F140D5DD2A17F7E600F59B79 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		F140D5E92A184D4600F59B79 /* Recommender.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Recommender.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+>>>>>>> c427bca (no update)
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F140D5E72A184AAB00F59B79 /* PythonKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,8 +115,13 @@
 			isa = PBXGroup;
 			children = (
 				4FDD32C92A15614A00A1DD18 /* The_Sleep_AppApp.swift */,
+<<<<<<< HEAD
 				F140D5DD2A17F7E600F59B79 /* WelcomeView.swift */,
 				F140D5DF2A1807B200F59B79 /* InitialView.swift */,
+=======
+				F140D5DD2A17F7E600F59B79 /* SwiftUIView.swift */,
+				F140D5E92A184D4600F59B79 /* Recommender.playground */,
+>>>>>>> c427bca (no update)
 				4FDD32F42A1562D700A1DD18 /* healthkit authorization.swift */,
 				4FDD32F62A15631A00A1DD18 /* gatherdata.swift */,
 				4FDD32F82A15FDA400A1DD18 /* brdgatherdata.swift */,
@@ -157,6 +173,9 @@
 			dependencies = (
 			);
 			name = "The Sleep App";
+			packageProductDependencies = (
+				F140D5E62A184AAB00F59B79 /* PythonKit */,
+			);
 			productName = "The Sleep App";
 			productReference = 4FDD32C62A15614A00A1DD18 /* The Sleep App.app */;
 			productType = "com.apple.product-type.application";
@@ -229,6 +248,9 @@
 				Base,
 			);
 			mainGroup = 4FDD32BD2A15614A00A1DD18;
+			packageReferences = (
+				F140D5E52A184AAB00F59B79 /* XCRemoteSwiftPackageReference "PythonKit" */,
+			);
 			productRefGroup = 4FDD32C72A15614A00A1DD18 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -620,6 +642,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F140D5E52A184AAB00F59B79 /* XCRemoteSwiftPackageReference "PythonKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "http://github.com/pvieito/PythonKit.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F140D5E62A184AAB00F59B79 /* PythonKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F140D5E52A184AAB00F59B79 /* XCRemoteSwiftPackageReference "PythonKit" */;
+			productName = PythonKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4FDD32BE2A15614A00A1DD18 /* Project object */;
 }
